@@ -1,0 +1,62 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="en">\
+<head>\
+    <meta charset="UTF-8">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <title>Anime Adventures Tool</title>\
+</head>\
+<body>\
+    <div class="popover fade bottom in" role="tooltip" id="popover606974" style="top: 30px; left: -94px; display: block;">\
+        <div class="arrow" style="left: 90.8333%;"></div>\
+        <h3 class="popover-title" style="display: none;"></h3>\
+        <div class="popover-content">\
+            <ul class="dropdown-menu flex-dropdown-menu" role="menu">\
+                <li>\
+                    <div class="VisitButton VisitButtonEditGLI" placeid="8304191830" data-universeid="3183403065" data-is-team-create-enabled="True" data-is-preemptive-team-create-start-enabled="True" data-allowupload="true">\
+                        <button role="button" onclick="openInRobloxStudio()">Edit in Studio</button>\
+                    </div>\
+                </li>\
+                <li id="copy-share-link-li" data-share-link-type="Experience">\
+                    <button type="button" onclick="copyExperienceLink()">Copy Experience Link</button>\
+                </li>\
+                <li id="block-item-li">\
+                    <button id="block-item-btn" type="button" onclick="blockItem()">Block</button>\
+                </li>\
+                <li id="report-abuse-li">\
+                    <a id="report-abuse-btn" href="https://www.roblox.com/abusereport/asset?RedirectUrl=%252Fgames%252F8304191830%252FAnime-Adventures&amp;id=8304191830">Report Abuse</a>\
+                </li>\
+            </ul>\
+        </div>\
+    </div>\
+\
+    <script>\
+        function openInRobloxStudio() \{\
+            const placeId = "8304191830"; // Correct Place ID for Anime Adventures\
+            const universeId = "3183403065"; // Correct Universe ID for Anime Adventures\
+            const studioURL = `roblox://studio/places/$\{placeId\}?universeid=$\{universeId\}`;\
+            window.location.href = studioURL;\
+        \}\
+\
+        function copyExperienceLink() \{\
+            const url = `https://www.roblox.com/games/8304191830/Anime-Adventures`;\
+            navigator.clipboard.writeText(url).then(() => \{\
+                alert("Experience link copied!");\
+            \}).catch((err) => \{\
+                console.error("Error copying link: ", err);\
+            \});\
+        \}\
+\
+        function blockItem() \{\
+            alert("Item blocked.");\
+        \}\
+    </script>\
+</body>\
+</html>\
+}
